@@ -18,6 +18,7 @@ const Nav = () => {
     })();
   }, []);
 
+  console.log(providers)
   return (
     <nav className='flex-between w-full mb-16 pt-3'>
       <Link href='/' className='flex gap-2 flex-center'>
@@ -84,7 +85,6 @@ const Nav = () => {
               alt='profile'
               onClick={() => setToggleDropdown(!toggleDropdown)}
             />
-
             {toggleDropdown && (
               <div className='dropdown'>
                 <Link
